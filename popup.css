@@ -1,0 +1,10 @@
+#popup-wrapper {
+  min-width: 300px;
+  min-height: 250px;
+}
+
+button {
+  height: 30px;
+  width: 30px;
+  outline: none;
+}
