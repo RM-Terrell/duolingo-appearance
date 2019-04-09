@@ -30,7 +30,10 @@ chrome.storage.sync.get(["colorBackgroundIn"], function(items){
     chrome.tabs.query({active: true, currentWindow: true}, function(tabs) {
       chrome.tabs.executeScript(
           tabs[0].id,
-          {code: 'document.getElementsByClassName("_2hEQd")[0].style.backgroundColor = "' + items.colorBackgroundIn + '";'});
+          {code: 'document.getElementsByClassName("_2hEQd")[0].style.backgroundColor = "' + items.colorBackgroundIn + '";' +
+                'var x = document.getElementsByClassName("_1E3L7");var i;for (i = 0; i < x.length; i++) {x[i].style.backgroundColor = "' + items.colorBackgroundIn + '";}' +
+                'var x = document.getElementsByClassName("a5SW0");var i;for (i = 0; i < x.length; i++) {x[i].style.backgroundColor = "' + items.colorBackgroundIn + '";}'
+          });
     });
   }
 });
@@ -41,7 +44,12 @@ colorBackgroundIn.onchange = function(element) {
     chrome.tabs.query({active: true, currentWindow: true}, function(tabs) {
       chrome.tabs.executeScript(
           tabs[0].id,
-          {code: 'document.getElementsByClassName("_2hEQd")[0].style.backgroundColor = "' + items.colorBackgroundIn + '";'});
+          {code: 'document.getElementsByClassName("_2hEQd")[0].style.backgroundColor = "' + items.colorBackgroundIn + '";' +
+                'var x = document.getElementsByClassName("_1E3L7");var i;for (i = 0; i < x.length; i++) {x[i].style.backgroundColor = "' + items.colorBackgroundIn + '";}' +
+                'var x = document.getElementsByClassName("a5SW0");var i;for (i = 0; i < x.length; i++) {x[i].style.backgroundColor = "' + items.colorBackgroundIn + '";}'
+          });
     });
   });
 };
+
+
