@@ -1,11 +1,23 @@
 <!DOCTYPE html>
 <html>
   <body>
-    <div id="popup-wrapper">
-      <h3>Colors:</h3>
-      <strong>Background - Outer</strong><input id="colorBackgroundOut" class="jscolor" type="text" value="ffffff">
-      <strong>Background - Inner</strong><input id="colorBackgroundIn" class="jscolor" type="text" value="ffffff">
+  <div id="popup-wrapper">
+    <h3>Colors:</h3>
+    <div><strong>Background - Outer</strong><input id="colorBackgroundOut" class="jscolor" type="text" value="ffffff" readonly></div>
+    <div><strong>Background - Inner</strong><input id="colorBackgroundIn" class="jscolor" type="text" value="ffffff" readonly></div>
+    <h3>Fonts:</h3>
+    <div>
+      <strong>Font type</strong>
+      <select id="fontFamily" class="fontFamily">
+        <option value="Arial">Arial</option>
+        <option value="Impact">Impact</option>
+        <option value="Verdana">Verdana</option>
+        <option value="Futura">Futura</option>
+        <option value="Impact">Calibri</option>
+        <option value="Chalkboard">Chalkboard</option>
+      </select>
     </div>
+  </div>
   </body>
   <footer>
     <script src="popup.js"></script>
