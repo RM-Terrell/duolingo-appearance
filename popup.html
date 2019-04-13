@@ -2,21 +2,47 @@
 <html>
   <body>
   <div id="popup-wrapper">
-    <h3>Colors:</h3>
-    <div><strong>Background - Outer</strong><input id="colorBackgroundOut" class="jscolor" type="text" value="ffffff" readonly></div>
-    <div><strong>Background - Inner</strong><input id="colorBackgroundIn" class="jscolor" type="text" value="ffffff" readonly></div>
-    <h3>Fonts:</h3>
-    <div>
-      <strong>Font type</strong>
-      <select id="fontFamily" class="fontFamily">
-        <option value="din-round">Standard</option>
-        <option value="Arial">Arial</option>
-        <option value="Impact">Impact</option>
-        <option value="Verdana">Verdana</option>
-        <option value="Futura">Futura</option>
-        <option value="Impact">Calibri</option>
-        <option value="Chalkboard">Chalkboard</option>
-      </select>
+    <div class="row">
+      <div class="column">
+        <h3>Colors:</h3>
+        <div class="settings-option-wrapper">
+          <div class="settings-option-inner">
+              <strong>Background - Outer</strong>
+              <input id="colorBackgroundOut" class="jscolor" type="text" value="ffffff" readonly>
+          </div>
+        </div>
+        <div class="settings-option-wrapper">
+          <div class="settings-option-inner">
+              <strong>Background - Inner</strong>
+              <input id="colorBackgroundIn" class="jscolor" type="text" value="ffffff" readonly>
+          </div>
+        </div>
+        <h3 style="margin-top: .3em;">Fonts:</h3>
+        <div class="settings-option-wrapper">
+          <div class="settings-option-inner">
+              <strong>Font type</strong>
+              <select id="fontFamily" class="fontFamily">
+                <option value="din-round">Standard</option>
+                <option value="Arial">Arial</option>
+                <option value="Impact">Impact</option>
+                <option value="Verdana">Verdana</option>
+                <option value="Futura">Futura</option>
+                <option value="Impact">Calibri</option>
+                <option value="Chalkboard">Chalkboard</option>
+              </select>
+          </div>
+        </div>
+      </div>
+      <div class="column">
+        <h3>Themes:</h3>
+        <div class="settings-option-wrapper">
+          <div class="settings-option-inner">
+              <select id="theme-family">
+                  <option>Standby for themes</option>
+                </select>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
   </body>
